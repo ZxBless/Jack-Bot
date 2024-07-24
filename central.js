@@ -534,11 +534,6 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
 > *iosbattery*
 > Inpide acceso al whatsapp y a la vez genera un desgaste de la Báteria 400mA.
 
-*Comando para Grupos de Wsp*
-
-> *gp*
-> Niega el acceso al grupo de whatsapp.
-
 ¿Quieres ser parte de la familia? comunícate con el siguiente número.
 *[Click]* https://wa.me/51976254398`;
 
