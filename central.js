@@ -521,11 +521,16 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
         const premiumCommands = `*Comandos Premiums*
 
 > *androidzxc*
-> Este comando ralentiza el dispositivo de la persona afectada, haciendo que el sistema operativo Android comience a fallar gradualmente. La función no solo afecta al dispositivo, sino también al WhatsApp de la persona, negándole el acceso a la aplicación.\n\nLa manera en la que la persona afectada puede recuperar el acceso es eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web.
+> Este comando ralentiza el dispositivo de la persona afectada, haciendo que el sistema operativo Android comience a fallar gradualmente.
+> La función no solo afecta al dispositivo, sino también al WhatsApp de la persona, negándole el acceso a la aplicación.
 > *ioszxc*
-> Este comando ralentiza el dispositivo de la persona afectada, haciendo que el sistema operativo iOS comience a fallar gradualmente. La función no solo afecta al dispositivo, sino también al WhatsApp de la persona, negándole el acceso a la aplicación.\n\nLa manera en la que la persona afectada puede recuperar el acceso es eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web.
+> Este comando ralentiza el dispositivo de la persona afectada, haciendo que el sistema operativo iOS comience a fallar gradualmente.
+> La función no solo afecta al dispositivo, sino también al WhatsApp de la persona, negándole el acceso a la aplicación.
 > *systemcrash*
-> Este comando provoca que el dispositivo Android de la persona afectada colapse, mostrando un mensaje de error del sistema o variables relacionadas, como "System Error". La función afecta tanto al dispositivo como al WhatsApp de la persona, negándole el acceso a la aplicación. Este comando afecta a versiones de Android 10 o inferiores.
+> Este comando provoca que el dispositivo Android de la persona afectada colapse, mostrando un mensaje de error del sistema o variables relacionadas, como "System Error".
+> La función afecta tanto al dispositivo como al WhatsApp de la persona, negándole el acceso a la aplicación. Este comando afecta a versiones de Android 10 o inferiores.
+
+📌 La manera en la que la persona afectada puede recuperar el acceso es eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web :(
 
 ¿Quieres ser parte de la familia? comunícate con el siguiente número.
 *[Click]* https://wa.me/51976254398`;
