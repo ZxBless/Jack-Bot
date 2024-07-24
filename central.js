@@ -850,12 +850,12 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
 *⚝* _¡Welcome! Aquí están los comandos de mi proyecto, Espero sea de tu agrado :)_
 ${readmore}
 
-╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍꜱ* - ᴘʀᴇᴍɪᴜᴍ
+╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍꜱ*
 > ${prefix}androidzxc
 > ${prefix}systemcrash
 > ${prefix}ioszxc
 
-╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ɢʀᴀᴛɪꜱ* - ɢʀᴀᴛɪꜱ
+╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ɢʀᴀᴛɪꜱ*
 > ${prefix}s
 > ${prefix}pin
 > ${prefix}toimg
