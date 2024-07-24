@@ -520,13 +520,11 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
       case 'premium': {
         const premiumCommands = `*Comandos Premiums*
 
-> *androidzxc*
+*androidzxc*
 > Este comando ralentiza el dispositivo Android de la persona afectada, haciendo que el sistema operativo comience a funcionar más lentamente y con errores graduales. Como resultado, WhatsApp también se verá afectado, negando el acceso a la aplicación.
-
-> *ioszxc*
+*ioszxc*
 > Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema operativo y  en el acceso a WhatsApp.
-
-> *systemcrash*
+*systemcrash*
 > Genera un crash en el dispositivo Android afectado (versiones 10 o inferiores), mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
 
 📌 La manera en la que la persona afectada puede recuperar el acceso es eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web :(
