@@ -522,20 +522,20 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
 ${readmore}
 *𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗣𝗿𝗲𝗺𝗶𝘂𝗺*
 
-❒ ${prefix}*𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰*
+❒ ${prefix}𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰
 > Este comando ralentiza el dispositivo Android de la persona afectada, haciendo que el sistema operativo comience a funcionar más lentamente y con errores graduales. Como resultado, WhatsApp también se verá afectado, negando el acceso a la aplicación.
 
 
-❒ *𝗶𝗼𝘀𝘇𝘅𝗰*
+❒ ${prefix}𝗶𝗼𝘀𝘇𝘅𝗰
 > Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema operativo y  en el acceso a WhatsApp.
 
 
-❒ *𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵*
+❒ ${prefix}𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵
 > Genera un crash en el dispositivo Android afectado (versiones 10 o inferiores), mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
 
 La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web.
 
-¿Quieres ser parte de la familia? comunícate con el siguiente número.
+¿Quieres ser Premium? comunícate con el siguiente número.
 *[Click]* https://wa.me/51976254398`;
 
         await JackBot.sendMessage(m.chat, {
@@ -544,7 +544,7 @@ La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp
             externalAdReply: {
               showAdAttribution: true,
               title: `¿Quieres ser usuario Premium?`,
-              body: `Lee lo siguiente ;)`,
+              body: `Lee la siguiente información :)`,
               thumbnailUrl: 'https://i.ibb.co/mrKpdXk/preview-1.webp', //https://i.ibb.co/80F70Nm/fonfovip.webp
               sourceUrl: global.link,
               mediaType: 1,
@@ -855,14 +855,14 @@ La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp
 ${readmore}
 
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍꜱ*
-> ${prefix}androidzxc
-> ${prefix}systemcrash
-> ${prefix}ioszxc
+> ${prefix}androidzxc - envía virus
+> ${prefix}systemcrash - envía virus
+> ${prefix}ioszxc - envía virus
 
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ɢʀᴀᴛɪꜱ*
-> ${prefix}s
-> ${prefix}pin
-> ${prefix}toimg
+> ${prefix}s - crea sticker al instante
+> ${prefix}pin - envía imágenes de pinterest
+> ${prefix}toimg - convierte sticker a imagen
 
 ╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
