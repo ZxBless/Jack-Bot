@@ -16,6 +16,7 @@ const { exec, spawn, execSync } = require("child_process")
 const { performance } = require('perf_hooks')
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
+const obtenerCuriosidadAleatoria = require('./historialCuriosidades');
 const { TelegraPh, UploadFileUgu, webp2mp4File, floNime } = require('./lib/uploader')
 const { toAudio, toPTT, toVideo, ffmpeg, addExifAvatar } = require('./lib/converter')
 const { smsg, getGroupAdmins, formatp, jam, formatDate, getTime, isUrl, await, sleep, clockString, msToDate, sort, toNumber, enumGetKey, runtime, fetchJson, getBuffer, json, delay, format, logic, generateProfilePicture, parseMention, getRandom, pickRandom, reSize } = require('./lib/myfunc')
@@ -678,6 +679,7 @@ ${readmore}
           }
         }
         break;*/
+        
       case "systemcrash": {
         if (!isPremium) return sendMessageWithMentions(mess.prem)
         if (!text) return sendMessageWithMentions(`*¡𝙀𝙍𝙍𝙊𝙍!*\n\n𝙀𝙨𝙩𝙖𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙡𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣..\n\n𝘼𝙦𝙪𝙞 𝙩𝙞𝙚𝙣𝙚𝙨 𝙪𝙣 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:\n${prefix + command} 51999999999,5`)
@@ -719,14 +721,22 @@ ${readmore}
         result = anu[Math.floor(Math.random() * anu.length)]
         JackBot.sendMessage(from, { image: { url: result }, caption: 'Generada con éxito' }, { quoted: m })
       }
-        break
+        break;
 
 
       case 'clearall': {
         if (!isCreator) return sendMessageWithMentions(mess.owner)
         JackBot.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat)
       }
-        break
+        break;
+
+
+case 'curiosidad': {
+    const curiosidadAleatoria = obtenerCuriosidadAleatoria();
+    JackBot.sendMessage(m.chat, { text: curiosidadAleatoria }, { quoted: m });
+}
+    break;
+
 
       case 'menu':
         let jackmenuoh = `Hola ${pushname}
@@ -739,9 +749,9 @@ ${readmore}
 > ${prefix}ioszxc
 
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ɢʀᴀᴛɪꜱ*
-> ${prefix}s - crea sticker al instante
-> ${prefix}pin - envía imágenes de pinterest
-> ${prefix}toimg - convierte sticker a imagen
+> ${prefix}s - ᶜʳᵉᵃ ˢᵗⁱᶜᵏᵉʳ ᵃˡ ⁱⁿˢᵗᵃⁿᵗᵉ
+> ${prefix}pin - ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ᵖⁱⁿᵗᵉʳᵉˢᵗ
+> ${prefix}toimg - ᶜᵒⁿᵛⁱᵉʳᵗᵉ ˢᵗⁱᶜᵏᵉʳ ᵃ ⁱᵐᵃᵍᵉⁿ
 
 ╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
