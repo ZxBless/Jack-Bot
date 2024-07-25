@@ -520,7 +520,6 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
       case 'premium': {
         const premiumCommands = `Aqui tienes la información de los comandos Premium 🌟
 ${readmore}
-｡･:*:･ﾟ★,｡･:*:･ﾟ☆ ｡･:*:･ﾟ★
 *𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗣𝗿𝗲𝗺𝗶𝘂𝗺*
 
 ❒ *𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰*
@@ -530,7 +529,7 @@ ${readmore}
 ❒ *𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵*
 > Genera un crash en el dispositivo Android afectado (versiones 10 o inferiores), mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
 
-La manera en la que la persona afectada puede recuperar el acceso es eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web :(
+La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web.
 
 ¿Quieres ser parte de la familia? comunícate con el siguiente número.
 *[Click]* https://wa.me/51976254398`;
