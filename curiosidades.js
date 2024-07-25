@@ -78,7 +78,7 @@ module.exports = [
     "El caracol de tierra puede dormir hasta tres años durante condiciones adversas.",
     "Las ratas tienen una excelente memoria espacial y pueden recordar rutas durante largos períodos.",
     "El ser humano promedio tiene entre 5 y 6 litros de sangre en su cuerpo.",
-    "La temperatura más alta registrada en la Tierra fue de 56.7°C en Furnace Creek Ranch, California, en 1913.";
+    "La temperatura más alta registrada en la Tierra fue de 56.7°C en Furnace Creek Ranch, California, en 1913.",
     "Los pulpos tienen tres corazones.",
     "El corazón de una ballena azul es tan grande como un coche.",
     "Un rayo puede calentar el aire alrededor de él a temperaturas cinco veces más calientes que la superficie del sol.",
