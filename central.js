@@ -520,7 +520,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
       case 'premium': {
         const premiumCommands = `Aqui tienes la información de los comandos Premium 🌟
 ${readmore}
-✩̣̣̣̣̣ͯ┄•͙✧⃝•͙┄✩ͯ•͙͙✧⃝•͙͙✩ͯ ✩̣̣̣̣̣ͯ┄•͙✧⃝•͙┄✩ͯ•͙͙✧⃝•͙͙✩ͯ
+｡･:*:･ﾟ★,｡･:*:･ﾟ☆ ｡･:*:･ﾟ★
 *𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗣𝗿𝗲𝗺𝗶𝘂𝗺*
 
 ❒ *𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰*
@@ -542,7 +542,7 @@ La manera en la que la persona afectada puede recuperar el acceso es eliminando 
               showAdAttribution: true,
               title: `¿Quieres ser usuario Premium?`,
               body: `Lee lo siguiente ;)`,
-              thumbnailUrl: 'https://i.ibb.co/80F70Nm/fonfovip.webp',
+              thumbnailUrl: 'https://i.ibb.co/mrKpdXk/preview-1.webp', //https://i.ibb.co/80F70Nm/fonfovip.webp
               sourceUrl: global.link,
               mediaType: 1,
               renderLargerThumbnail: true
@@ -850,23 +850,23 @@ La manera en la que la persona afectada puede recuperar el acceso es eliminando 
         let jackmenuoh = `Hola ${pushname}
 *⚝* _¡Welcome! Aquí están los comandos de mi proyecto, Espero sea de tu agrado :)_
 ${readmore}
-✩̣̣̣̣̣ͯ┄•͙✧⃝•͙┄✩ͯ•͙͙✧⃝•͙͙✩ͯ┄•͙✧⃝•͙┄✩̣̣̣̣̣ͯ✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝
+
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍꜱ*
 > ${prefix}androidzxc
 > ${prefix}systemcrash
 > ${prefix}ioszxc
-✩̣̣̣̣̣ͯ┄•͙✧⃝•͙┄✩ͯ•͙͙✧⃝•͙͙✩ͯ┄•͙✧⃝•͙┄✩̣̣̣̣̣ͯ✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝
+
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ɢʀᴀᴛɪꜱ*
 > ${prefix}s
 > ${prefix}pin
 > ${prefix}toimg
-✩̣̣̣̣̣ͯ┄•͙✧⃝•͙┄✩ͯ•͙͙✧⃝•͙͙✩ͯ┄•͙✧⃝•͙┄✩̣̣̣̣̣ͯ✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝
+
 ╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
-✩̣̣̣̣̣ͯ┄•͙✧⃝•͙┄✩ͯ•͙͙✧⃝•͙͙✩ͯ┄•͙✧⃝•͙┄✩̣̣̣̣̣ͯ✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝
+
 ╰┈➤ *ᴄᴏɴᴛᴀᴄᴛᴀʀ ᴄᴏɴ ᴇʟ ᴄʀᴇᴀᴅᴏʀ*
 > ${prefix}owner
-✩̣̣̣̣̣ͯ┄•͙✧⃝•͙┄✩ͯ•͙͙✧⃝•͙͙✩ͯ┄•͙✧⃝•͙┄✩̣̣̣̣̣ͯ✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝✩ͯ•͙͙✧⃝
+
 ╰┈➤ *Jack Bot*
            *Bot malicioso*`
         if (typemenu === 'v1') {
