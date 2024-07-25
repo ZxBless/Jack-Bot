@@ -498,18 +498,16 @@ ${readmore}
 *𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗣𝗿𝗲𝗺𝗶𝘂𝗺*
 
 ❒ ${prefix}𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰
-> Este comando ralentiza el dispositivo Android de la persona afectada, haciendo que el sistema operativo comience a funcionar más lentamente y con errores graduales. Como resultado, WhatsApp también se verá afectado, negando el acceso a la aplicación.
-
-
+> Este comando ralentiza el dispositivo Android de la víctima, haciendo que el sistema se vuelva más lento y WhatsApp se vuelva inusable.
 ❒ ${prefix}𝗶𝗼𝘀𝘇𝘅𝗰
 > Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema operativo y  en el acceso a WhatsApp.
 
 
-❒ ${prefix}𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵
-> Genera un crash en el dispositivo Android afectado (versiones 10 o inferiores), mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
+❒ ${prefix}𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵  ᴀɴᴅʀᴏɪᴅ 10 ᴏ ᴀɴᴛᴇʀɪᴏʀᴇꜱ
+> Genera un crash en el dispositivo Android afectado, mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
 
 ¿Quieres ser Premium? comunícate con el siguiente número.
-*[Click]* https://wa.me/51976254398`;
+*[Click]* +51976254398`;
 
         await JackBot.sendMessage(m.chat, {
           text: premiumCommands,
@@ -781,9 +779,10 @@ ${readmore}
 > ${prefix}ioszxc
 
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ɢʀᴀᴛɪꜱ*
-> ${prefix}s - ᶜʳᵉᵃ ˢᵗⁱᶜᵏᵉʳ ᵃˡ ⁱⁿˢᵗᵃⁿᵗᵉ
-> ${prefix}pin - ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ᵖⁱⁿᵗᵉʳᵉˢᵗ
-> ${prefix}toimg - ᶜᵒⁿᵛⁱᵉʳᵗᵉ ˢᵗⁱᶜᵏᵉʳ ᵃ ⁱᵐᵃᵍᵉⁿ
+> ${prefix}s   ᶜʳᵉᵃ ˢᵗⁱᶜᵏᵉʳ ᵃˡ ⁱⁿˢᵗᵃⁿᵗᵉ
+> ${prefix}pin   ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ᵖⁱⁿᵗᵉʳᵉˢᵗ
+> ${prefix}toimg   ᶜᵒⁿᵛⁱᵉʳᵗᵉ ˢᵗⁱᶜᵏᵉʳ ᵃ ⁱᵐᵃᵍᵉⁿ
+> ${prefix}curiosidad   ᵈᵃᵗᵒˢ ᶜᵘʳⁱᵒˢᵒˢ
 
 ╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
