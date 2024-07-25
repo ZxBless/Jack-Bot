@@ -522,10 +522,14 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
 ${readmore}
 *𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗣𝗿𝗲𝗺𝗶𝘂𝗺*
 
-❒ *𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰*
+❒ ${prefix}*𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰*
 > Este comando ralentiza el dispositivo Android de la persona afectada, haciendo que el sistema operativo comience a funcionar más lentamente y con errores graduales. Como resultado, WhatsApp también se verá afectado, negando el acceso a la aplicación.
+
+
 ❒ *𝗶𝗼𝘀𝘇𝘅𝗰*
 > Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema operativo y  en el acceso a WhatsApp.
+
+
 ❒ *𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵*
 > Genera un crash en el dispositivo Android afectado (versiones 10 o inferiores), mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
 
