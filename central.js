@@ -16,6 +16,7 @@ const { exec, spawn, execSync } = require("child_process")
 const { performance } = require('perf_hooks')
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
+const trivia = require('./trivia');
 const obtenerCuriosidadAleatoria = require('./historialCuriosidades');
 const { TelegraPh, UploadFileUgu, webp2mp4File, floNime } = require('./lib/uploader')
 const { toAudio, toPTT, toVideo, ffmpeg, addExifAvatar } = require('./lib/converter')
@@ -73,6 +74,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
     const isQuotedContact = type === 'extendedTextMessage' && content.includes('contactMessage')
     const isQuotedDocument = type === 'extendedTextMessage' && content.includes('documentMessage')
     const sticker = []
+    const triviaState = {};
     const isAfkOn = afk.checkAfkUser(m.sender, _afk)
     const isGroup = m.key.remoteJid.endsWith('@g.us')
     const groupMetadata = m.isGroup ? await JackBot.groupMetadata(m.chat).catch(e => { }) : ''
@@ -736,6 +738,36 @@ case 'curiosidad': {
     JackBot.sendMessage(m.chat, { text: curiosidadAleatoria }, { quoted: m });
 }
     break;
+
+
+case 'trivia': {
+    const chatId = m.chat;
+
+    // Verifica si ya hay una trivia en curso para el chat
+    if (triviaState[chatId]) {
+        return JackBot.sendMessage(chatId, { text: "Ya estás participando en una trivia. Espera un momento para obtener la siguiente pregunta." }, { quoted: m });
+    }
+
+    // Selecciona una pregunta aleatoria
+    const preguntaAleatoria = trivia[Math.floor(Math.random() * trivia.length)];
+
+    // Almacena el estado de la trivia para este chat
+    triviaState[chatId] = preguntaAleatoria;
+
+    // Envía la pregunta como mensaje
+    JackBot.sendMessage(chatId, { text: `Pregunta: ${preguntaAleatoria.pregunta}` }, { quoted: m });
+
+    // Envía la respuesta después de un tiempo (por ejemplo, 10 segundos)
+    setTimeout(() => {
+        if (triviaState[chatId] === preguntaAleatoria) { // Asegura que la trivia aún esté activa
+            JackBot.sendMessage(chatId, { text: `Respuesta: ${preguntaAleatoria.respuesta}` }, { quoted: m });
+            // Limpia el estado de trivia para este chat
+            delete triviaState[chatId];
+        }
+    }, 10000); // 10 segundos
+}
+break;
+
 
 
       case 'menu':
