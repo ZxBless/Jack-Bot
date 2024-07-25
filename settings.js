@@ -14,7 +14,7 @@ global.botname = 'Jack Bot' //name of the bot
 
 //sticker details
 global.packname = '🫧𓇼𓏲*ੈ✩‧₊˚🎐\n✧ ˚ 𝓙𝓪𝓬𝓴 𝓑𝓸𝓽\n✧ ˚ 𝓑𝓸𝓽 𝓶𝓪𝓵𝓲𝓬𝓲𝓸𝓼𝓸\n🫧𓇼𓏲*ੈ✩‧₊˚🎐'
-global.author = '\n\n𝘾𝙧𝙚𝙖𝙙𝙤𝙧:𝘽𝙡𝙚𝙨𝙨\n    ₊₅₁ ₉₇₆ ₂₅₄ ₃₉₈\n\n'
+global.author = '\n𝘾𝙧𝙚𝙖𝙙𝙤𝙧: 𝘽𝙡𝙚𝙨𝙨\n    ₊₅₁ ₉₇₆ ₂₅₄ ₃₉₈\n'
 
 //console view/theme
 global.themeemoji = '🪀'
