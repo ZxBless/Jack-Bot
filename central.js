@@ -557,13 +557,13 @@ La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp
           let encmedia = await JackBot.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
           await fs.unlinkSync(encmedia)
         } else if (/video/.test(mime)) {
-          if (qmsg.seconds > 11) return sendMessageWithMentions('ERROR, el video no tiene que pasar de 10 segundos')
+          if (qmsg.seconds > 11) return sendMessageWithMentions('`ERROR, el video no tiene que pasar de 10 segundos`')
           let media = await JackBot.downloadMediaMessage(qmsg)
           let encmedia = await JackBot.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
           await fs.unlinkSync(encmedia)
         } else {
-          if (qmsg.seconds > 11) return sendMessageWithMentions('ERROR, el video no tiene que pasar de 10 segundos')
-          await loadingerror(), sendMessageWithMentions(`Etiqueta una imagen o video con el siguiente comando\n\n➥ *${prefix + command}*\n\nSi quieres convertir un video en sticker, asegurate que el video no pase de 10 segundos.`)
+          if (qmsg.seconds > 11) return sendMessageWithMentions('`ERROR, el video no tiene que pasar de 10 segundos`')
+          await loadingerror(), sendMessageWithMentions(`Etiqueta una imagen o video con el siguiente comando\n\n➥ *${prefix + command}*\n\n`Si quieres convertir un video en sticker, asegurate que el video no pase de 10 segundos.``)
         }
       }
         break
@@ -571,7 +571,7 @@ La persona afectada puede recuperar el acceso eliminando la aplicación WhatsApp
 
       case 'toimage': case 'toimg': {
         if (!quoted) throw 'Etiqueta un sticker'
-        if (!/webp/.test(mime)) throw `Tienes que etiquetar un sticker con el siguiente comando *${prefix + command}*`
+        if (!/webp/.test(mime)) throw ``Tienes que etiquetar un sticker con el siguiente comando *${prefix + command}*``
         let media = await JackBot.downloadAndSaveMediaMessage(quoted)
         let ran = await getRandom('.png')
         exec(`ffmpeg -i ${media} ${ran}`, (err) => {
