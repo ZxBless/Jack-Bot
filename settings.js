@@ -13,8 +13,8 @@ global.ownername = 'Bot malicioso' //owner name
 global.botname = 'Jack Bot' //name of the bot
 
 //sticker details
-global.packname = '🫧𓇼𓏲*ੈ✩‧₊˚🎐\n✧ ˚ 　· 　　 .Jack Bot\n✧ ˚ 　· 　　 .Bot malicioso\n🫧𓇼𓏲*ੈ✩‧₊˚🎐'
-global.author = '{}'
+global.packname = '🫧𓇼𓏲*ੈ✩‧₊˚🎐\n✧ ˚ 𝓙𝓪𝓬𝓴 𝓑𝓸𝓽\n✧ ˚ 𝓑𝓸𝓽 𝓶𝓪𝓵𝓲𝓬𝓲𝓸𝓼𝓸\n🫧𓇼𓏲*ੈ✩‧₊˚🎐'
+global.author = '𝓒𝓻𝓮𝓪𝓭𝓸𝓻 𝓭𝓮𝓵 𝓫𝓸𝓽\n𝓑𝓵𝓮𝓼𝓼\n𝓝𝓾𝓶𝓮𝓻𝓸: +51 976 254 398'
 
 //console view/theme
 global.themeemoji = '🪀'
