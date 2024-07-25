@@ -503,7 +503,10 @@ ${readmore}
 
 
 ❒ ${prefix}𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵
-> Genera un crash en el dispositivo Android afectado (versiones 10 o inferiores), mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.\n\n`¿Quieres ser Premium? comunícate con el siguiente número.`\n`*[Click]*` https://wa.me/51976254398`;
+> Genera un crash en el dispositivo Android afectado (versiones 10 o inferiores), mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
+
+¿Quieres ser Premium? comunícate con el siguiente número.
+*[Click]* https://wa.me/51976254398`;
 
         await JackBot.sendMessage(m.chat, {
           text: premiumCommands,
