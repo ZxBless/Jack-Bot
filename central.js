@@ -518,14 +518,15 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
       }
       //Comando que da informacion sobre los comandos.
       case 'premium': {
-        const premiumCommands = `Estos comandos afectan el dispositivo del destinatario y bloquean el acceso a WhatsApp. El remitente no se ve afectado.
+        const premiumCommands = `Aqui tienes la información de los comandos Premium 🌟
 ${readmore}
-*Comandos Premiums*
-*androidzxc*
+╰┈➤┊┊┊┊ ➶ ❁۪ ｡˚ ✧ ┈➤ *𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗣𝗿𝗲𝗺𝗶𝘂𝗺*
+
+> ┊┊┊┊ ➶ ❁۪ ｡˚ ✧ *𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰*
 > Este comando ralentiza el dispositivo Android de la persona afectada, haciendo que el sistema operativo comience a funcionar más lentamente y con errores graduales. Como resultado, WhatsApp también se verá afectado, negando el acceso a la aplicación.
-*ioszxc*
+> ┊┊┊┊ ➶ ❁۪ ｡˚ ✧ *𝗶𝗼𝘀𝘇𝘅𝗰*
 > Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema operativo y  en el acceso a WhatsApp.
-*systemcrash*
+> ┊┊┊┊ ➶ ❁۪ ｡˚ ✧ *𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵*
 > Genera un crash en el dispositivo Android afectado (versiones 10 o inferiores), mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
 
 La manera en la que la persona afectada puede recuperar el acceso es eliminando la aplicación WhatsApp o teniendo su cuenta vinculada en WhatsApp Web :(
