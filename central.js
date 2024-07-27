@@ -420,7 +420,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
     }
 
     if (autobio) {
-      JackBot.updateProfileStatus(`24/7 Online Bot By ${ownername}`).catch(_ => _)
+      JackBot.updateProfileStatus(`JackBot activo`).catch(_ => _)
     }
     if (m.sender.startsWith('92') && global.anti92 === true) {
       return JackBot.updateBlockStatus(m.sender, 'block')
