@@ -363,9 +363,16 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
 
     async function loadings() {
       var jacklod = [
-        "《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
-        "《 ████▒▒▒▒▒▒▒▒》30%",
-        "《 ████████████》100%",
+        "Cargando. . .",
+        "█▒▒▒▒▒▒▒▒▒",
+        "𝟐𝟎%",
+        "███▒▒▒▒▒▒▒",
+        "𝟓𝟎%",
+        "█████▒▒▒▒▒",
+        "𝟕𝟎%",
+        "███████▒▒▒",
+        "𝟏𝟎𝟎%",
+        "██████████",
         "loading complete"
       ]
       let { key } = await JackBot.sendMessage(from, { text: '*Sticker generado*' })
@@ -495,19 +502,19 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
       case 'premium': {
         const premiumCommands = `Aqui tienes la información de los comandos Premium 🌟
 ${readmore}
-*𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗣𝗿𝗲𝗺𝗶𝘂𝗺*
+𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 
 
 ❒ ${prefix}𝗮𝗻𝗱𝗿𝗼𝗶𝗱𝘇𝘅𝗰
-> Este comando ralentiza el dispositivo Android de la víctima, haciendo que el sistema se vuelva más lento y WhatsApp se vuelva inusable.
+> ╰┈➤ Este comando ralentiza el dispositivo Android de la víctima, haciendo que el sistema se vuelva más lento y WhatsApp se vuelva inusable.
+
 ❒ ${prefix}𝗶𝗼𝘀𝘇𝘅𝗰
-> Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema operativo y  en el acceso a WhatsApp.
+> ╰┈➤ Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema operativo y  en el acceso a WhatsApp.
 
+❒ ${prefix}𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵  android(10)
+> ╰┈➤ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
 
-❒ ${prefix}𝘀𝘆𝘀𝘁𝗲𝗺𝗰𝗿𝗮𝘀𝗵  ᴀɴᴅʀᴏɪᴅ 10 ᴏ ᴀɴᴛᴇʀɪᴏʀᴇꜱ
-> Genera un crash en el dispositivo Android afectado, mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
-
-¿Quieres ser Premium? comunícate con el siguiente número.
-*[Click]* +51 976 254 398`;
+¿𝗤𝘂𝗶𝗲𝗿𝗲𝘀 𝘀𝗲𝗿 𝗣𝗿𝗲𝗺𝗶𝘂𝗺? comunícate con el siguiente número:
+*[Click]* 976254398`;
 
         await JackBot.sendMessage(m.chat, {
           text: premiumCommands,
@@ -515,7 +522,7 @@ ${readmore}
             externalAdReply: {
               showAdAttribution: true,
               title: `¿Quieres ser usuario Premium?`,
-              body: `Lee la siguiente información :)`,
+              body: `Lee la siguiente información ;)`,
               thumbnailUrl: 'https://i.pinimg.com/736x/6e/e4/90/6ee490d70942a9e64746438c75f185d4.jpg', //https://i.ibb.co/80F70Nm/fonfovip.webp
               sourceUrl: global.link,
               mediaType: 1,
