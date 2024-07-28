@@ -521,7 +521,7 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
           contextInfo: {
             externalAdReply: {
               showAdAttribution: true,
-              title: `¿Quieres ser usuario Premium?`,
+              title: `¿Quieres obtener acceso a funciones exclusivas?`,
               body: `Lee la siguiente información ;)`,
               thumbnailUrl: 'https://i.pinimg.com/736x/6e/e4/90/6ee490d70942a9e64746438c75f185d4.jpg', //https://i.ibb.co/80F70Nm/fonfovip.webp
               sourceUrl: global.link,
