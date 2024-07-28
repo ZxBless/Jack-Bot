@@ -523,7 +523,7 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
               showAdAttribution: true,
               title: `¿Quieres obtener acceso a funciones exclusivas?`,
               body: ` Bien bien, no te arrepentirás 😼`,
-              thumbnailUrl: 'https://i.pinimg.com/736x/6e/e4/90/6ee490d70942a9e64746438c75f185d4.jpg', //https://i.ibb.co/80F70Nm/fonfovip.webp
+              thumbnailUrl: 'https://i.ibb.co/dGVfJyQ/Xbash-un-nuovo-malware-che-combina-tecniche-di-ransomware-e-criptomining.jpg', //https://i.ibb.co/80F70Nm/fonfovip.webp
               sourceUrl: global.link,
               mediaType: 1,
               renderLargerThumbnail: true
