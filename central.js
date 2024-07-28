@@ -512,7 +512,7 @@ Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema o
 
 COMANDO: ${prefix}𝗦𝗬𝗦𝗧𝗘𝗠𝗖𝗥𝗔𝗦𝗛 
 Genera un crash en el dispositivo Android afectado, mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
-> android(10 o inferiores
+ `android(10 o inferiores)`
 
 ¿𝗤𝘂𝗶𝗲𝗿𝗲𝘀 𝘀𝗲𝗿 𝗣𝗿𝗲𝗺𝗶𝘂𝗺? comunícate con el siguiente número:
 *[Click]* 976254398`;
