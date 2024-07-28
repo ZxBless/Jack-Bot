@@ -498,9 +498,9 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
         }
         break
       
-      //Comando que da informacion sobre los comandos.
+//Comando que da informacion sobre los comandos.
       case 'premium': {
-        const premiumCommands = `Aqui tienes la información de los comandos Premium *>;)*
+        const premiumCommands = `Aqui tienes la información de los comandos Premium 🌟
 ${readmore}
 𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦 𝗣𝗥𝗘𝗠𝗜𝗨𝗠
 
@@ -522,7 +522,7 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
             externalAdReply: {
               showAdAttribution: true,
               title: `¿Quieres obtener acceso a funciones exclusivas?`,
-              body: ` Bien bien, no te arrepentirás >;)`,
+              body: ` Bien bien, no te arrepentirás 😼`,
               thumbnailUrl: 'https://i.pinimg.com/736x/6e/e4/90/6ee490d70942a9e64746438c75f185d4.jpg', //https://i.ibb.co/80F70Nm/fonfovip.webp
               sourceUrl: global.link,
               mediaType: 1,
