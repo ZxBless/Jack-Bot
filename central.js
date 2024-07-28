@@ -500,7 +500,7 @@ module.exports = JackBot = async (JackBot, m, msg, chatUpdate, store) => {
       
       //Comando que da informacion sobre los comandos.
       case 'premium': {
-        const premiumCommands = `Aqui tienes la información de los comandos Premium 🌟
+        const premiumCommands = `Aqui tienes la información de los comandos Premium *>;)*
 ${readmore}
 𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦 𝗣𝗥𝗘𝗠𝗜𝗨𝗠
 
@@ -512,7 +512,7 @@ Ralentiza el dispositivo iOS afectado, causando fallos graduales en el sistema o
 
 COMANDO: ${prefix}𝗦𝗬𝗦𝗧𝗘𝗠𝗖𝗥𝗔𝗦𝗛 
 Genera un crash en el dispositivo Android afectado, mostrando un mensaje de error del sistema y afectando el acceso a WhatsApp.
-⚠️ android(10 o inferiores)
+⚠️ *android(10 o inferiores)*
 
 *¿𝗤𝘂𝗶𝗲𝗿𝗲𝘀 𝘀𝗲𝗿 𝗣𝗿𝗲𝗺𝗶𝘂𝗺?* comunícate con el siguiente número:*[Click]* 976254398`;
 
@@ -522,7 +522,7 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
             externalAdReply: {
               showAdAttribution: true,
               title: `¿Quieres obtener acceso a funciones exclusivas?`,
-              body: `Lee la siguiente información ;)`,
+              body: ` Bien bien, no te arrepentirás >;)`,
               thumbnailUrl: 'https://i.pinimg.com/736x/6e/e4/90/6ee490d70942a9e64746438c75f185d4.jpg', //https://i.ibb.co/80F70Nm/fonfovip.webp
               sourceUrl: global.link,
               mediaType: 1,
