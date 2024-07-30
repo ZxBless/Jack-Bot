@@ -21,7 +21,7 @@ global.themeemoji = '🪀'
 global.wm = "JackBotHome"
 
 //theme link
-global.link = ''
+global.link = 'https://chat.whatsapp.com/DGpIG4HMeke0VEpoF3j4nv'
 
 //custom prefix
 global.prefa = ['', '!', '.', '#', '&']
