@@ -13,8 +13,8 @@ global.ownername = 'Bot malicioso' //owner name
 global.botname = 'Jack Bot' //name of the bot
 
 //sticker details
-global.packname = '🫧𓇼𓏲*ੈ✩‧₊˚🎐\n✧ ˚ 𝗝𝗮𝗰𝗸 𝗕𝗼𝘁\n✧ ˚ 𝗥𝗼𝗯𝗼𝘁 𝗺𝗮𝗹𝗶𝗰𝗶𝗼𝘀𝗼\n🫧𓇼𓏲*ੈ✩‧₊˚🎐'
-global.author = '\n𝘾𝙧𝙚𝙖𝙙𝙤𝙧: 𝘽𝙡𝙚𝙨𝙨 \n    ₊₅₁ ₉₇₆ ₂₅₄ ₃₉₈\n'
+global.packname = '🫧𓇼𓏲*ੈ✩‧₊˚🎐\n✧ ˚ 𝓙𝓪𝓬𝓴 𝓑ⷪ𝓸ᷫ𝓽ⷭ\n✧ ˚ 𝘾𝙧𝙚𝙖𝙙𝙤𝙧:\n🫧𓇼𓏲*ੈ✩‧₊˚🎐'
+global.author = '\n\n 𝘽𝙡𝙚𝙨𝙨 \n\n\n\nnumber:    ₊₅₁ ₉₇₆ ₂₅₄ ₃₉₈\n'
 
 //console view/theme
 global.themeemoji = '🪀'
@@ -22,7 +22,6 @@ global.wm = "JackBotHome"
 
 //theme link
 global.link = 'https://chat.whatsapp.com/DGpIG4HMeke0VEpoF3j4nv' // Link whatsapp owner : https://wa.me/51976254398
-global.linkowner = 'https://wa.me/51976254398'
 
 //custom prefix
 global.prefa = ['', '!', '.', '#', '&']
