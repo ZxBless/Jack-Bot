@@ -21,7 +21,8 @@ global.themeemoji = '🪀'
 global.wm = "JackBotHome"
 
 //theme link
-global.link = 'https://chat.whatsapp.com/DGpIG4HMeke0VEpoF3j4nv'
+global.link = 'https://chat.whatsapp.com/DGpIG4HMeke0VEpoF3j4nv' // Link whatsapp owner : https://wa.me/51976254398
+global.linkowner = 'https://wa.me/51976254398'
 
 //custom prefix
 global.prefa = ['', '!', '.', '#', '&']
