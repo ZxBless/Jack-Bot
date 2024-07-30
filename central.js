@@ -525,7 +525,7 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
               title: `¿Quieres obtener acceso a funciones exclusivas?`,
               body: ` Bien bien, no te arrepentirás 😼`,
               thumbnailUrl: 'https://i.ibb.co/dGVfJyQ/Xbash-un-nuovo-malware-che-combina-tecniche-di-ransomware-e-criptomining.jpg', //https://i.ibb.co/80F70Nm/fonfovip.webp
-              sourceUrl: global.linkowner,
+              sourceUrl: global.link,
               mediaType: 1,
               renderLargerThumbnail: true
             }
@@ -779,6 +779,11 @@ break;
       case 'menu':
         let jackmenuoh = `Hola ${pushname}
 *⚝* _¡Welcome! Aquí están los comandos de mi proyecto, Espero sea de tu agrado :)_
+
+𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 
+𝗣𝗿𝗲𝗳𝗶𝗷𝗼:  [ ${prefix} ]
+𝗠𝗼𝗱𝗼: ${JackBot.public ? 'Public' : Self}
+𝗛𝗼𝘀𝘁: ${os.hostname()}
 ${readmore}
 
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍꜱ*
