@@ -780,11 +780,8 @@ break;
         let jackmenuoh = `Hola ${pushname}
 *⚝* _¡Welcome! Aquí están los comandos de mi proyecto, Espero sea de tu agrado :)_
 
-𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 
-𝗣𝗿𝗲𝗳𝗶𝗷𝗼:  [ ${prefix} ]
-𝗠𝗼𝗱𝗼: ${JackBot.public ? 'Public' : Self}
-𝗛𝗼𝘀𝘁: ${os.hostname()}
 ${readmore}
+𝗣𝗿𝗲𝗳𝗶𝗷𝗼:  [ ${prefix} ]
 
 ╰┈➤ *ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍꜱ*
 > ${prefix}androidzxc
