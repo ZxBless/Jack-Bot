@@ -14,7 +14,7 @@ global.botname = 'Jack Bot' //¿Nombre off del bot?
 
 //sticker details
 global.packname = '🫧𓇼𓏲*ੈ✩‧₊˚🎐\n✧ ˚ 𝓙𝓪𝓬𝓴 𝓑ⷪ𝓸ᷫ𝓽ⷭ\n✧ ˚ 𝓡𝓸ⷨ𝓫𝓸ᷧ𝓽 𝓶ᷱ𝓪ࣲᷧ𝓵𝓲ᷢ𝓬𝓲ⷷ𝓸𝓼𝓸ࣧࣧ\n🫧𓇼𓏲*ੈ✩‧₊˚🎐'
-global.author = '¿Quieres hacer una malicia cibernética? Escribe al siguiente número:\n    ₊₅₁ ₉₇₆ ₂₅₄ ₃₉₈'
+global.author = '𝓒𝓻𝓮ᷩ𝓪ᷞࣧ𝓭ⷷ𝓸ᷤ𝓻ᷤ 𝓭𝓮𝓵ࣧࣧ 𝓫ࣲࣲ𝓸𝓽 : 𝓑𝓵ࣲࣲ𝓮ⷪ𝓼ᷫ𝓼ⷭ\n    ₊₅₁ ₉₇₆ ₂₅₄ ₃₉₈'
 
 //console view/theme
 global.themeemoji = '🪀'
