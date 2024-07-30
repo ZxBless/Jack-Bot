@@ -8,20 +8,20 @@ global.ytname = ""
 global.socialm = ""
 global.location = "America, Lima, Peru"
 
-global.ownernumber = '51976254398'  //creator number
-global.ownername = 'Bot malicioso' //owner name
-global.botname = 'Jack Bot' //name of the bot
+global.ownernumber = '51976254398'  //Número del creador
+global.ownername = 'Bot malicioso' //Nombre del owner
+global.botname = 'Jack Bot' //¿Nombre off del bot?
 
 //sticker details
-global.packname = '🫧𓇼𓏲*ੈ✩‧₊˚🎐\n✧ ˚ 𝓙𝓪𝓬𝓴 𝓑ⷪ𝓸ᷫ𝓽ⷭ\n✧ ˚ 𝘾𝙧𝙚𝙖𝙙𝙤𝙧:\n🫧𓇼𓏲*ੈ✩‧₊˚🎐'
-global.author = '\n\n 𝘽𝙡𝙚𝙨𝙨 \n\n\n\nnumber:    ₊₅₁ ₉₇₆ ₂₅₄ ₃₉₈\n'
+global.packname = '🫧𓇼𓏲*ੈ✩‧₊˚🎐\n✧ ˚ 𝓙𝓪𝓬𝓴 𝓑ⷪ𝓸ᷫ𝓽ⷭ\n✧ ˚ 𝓡𝓸ⷨ𝓫𝓸ᷧ𝓽 𝓶ᷱ𝓪ࣲᷧ𝓵𝓲ᷢ𝓬𝓲ⷷ𝓸𝓼𝓸ࣧࣧ\n🫧𓇼𓏲*ੈ✩‧₊˚🎐'
+global.author = '\nHola, veo que estás interesado en agregar el sticker. No te preocupes, puedes hacerlo sin problema. Además, te dejo el número de mi creador por si deseas conocer más sobre el proyecto en el cuál el está trabajando.\n    ₊₅₁ ₉₇₆ ₂₅₄ ₃₉₈\n\n Bot esclusivo 100% '
 
 //console view/theme
 global.themeemoji = '🪀'
-global.wm = "JackBotHome"
+global.wm = "Jack Bot 100% Esclusivo"
 
 //theme link
-global.link = 'https://chat.whatsapp.com/DGpIG4HMeke0VEpoF3j4nv' // Link whatsapp owner : https://wa.me/51976254398
+global.link = 'https://chat.whatsapp.com/DGpIG4HMeke0VEpoF3j4nv' // Link del grupo de whAtsapp :)
 
 //custom prefix
 global.prefa = ['', '!', '.', '#', '&']
