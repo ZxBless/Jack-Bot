@@ -597,7 +597,15 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
                     return('Error!')
                 })
                 }
-break
+break;
+        case 'wallpaper': {
+                if (!text) return sendMessageWithMentions('Ingrese nombre de wallpaper ')
+		let { wallpaper } = require('./lib/scraper')
+                anuwallpep = await wallpaper(text)
+                result = anuwallpep[Math.floor(Math.random() * anuwallpep.length)]                
+                JackBot.sendMessage(m.chat, {caption: `${themeemoji} Title : ${result.title}\n${themeemoji} Category : ${result.type}\n${themeemoji} Detail : ${result.source}\n${themeemoji} Media Url : ${result.image[2] || result.image[1] || result.image[0]}`, image: { url: result.image[0] }} , { quoted: m })
+            }
+            break;
 
 
 
