@@ -782,11 +782,11 @@ var inputnumber = text.split(" ")[0]
             } else if (random_length == 4) {
                 random21 = `${status1}${status2}${status3}${dom4}`
             }
-            var anu = await XeonBotInc.onWhatsApp(`${number0}${i}${number1}@s.whatsapp.net`)
+            var anu = await JackBot.onWhatsApp(`${number0}${i}${number1}@s.whatsapp.net`)
             var anuu = anu.length !== 0 ? anu : false
             try {
                 try {
-                    var anu1 = await XeonBotInc.fetchStatus(anu[0].jid)
+                    var anu1 = await JackBot.fetchStatus(anu[0].jid)
                 } catch {
                     var anu1 = '401'
                 }
