@@ -793,7 +793,7 @@ var inputnumber = text.split(" ")[0]
                 if (anu1 == '401' || anu1.status.length == 0) {
                     nobio += `wa.me/${anu[0].jid.split("@")[0]}\n`
                 } else {
-                    text66 += `🪀 `*Número:*` wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Última actualización : * ${moment(anu1.setAt).tz('America/Lima').format('HH:mm:ss DD/MM/YYYY')}\n\n`
+                    text66 += `🪀 *Número:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Última actualización : * ${moment(anu1.setAt).tz('America/Lima').format('HH:mm:ss DD/MM/YYYY')}\n\n`
                 }
             } catch {
                 nowhatsapp += `${number0}${i}${number1}\n`
