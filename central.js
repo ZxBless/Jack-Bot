@@ -591,6 +591,23 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
       }
         break;
 
+         case 'tovideo': {
+                if (!/webp/.test(mime)) return sendMessageWithMentions(`Etiqueta un sticker en movimiento *${prefix + command}*`)
+                let media = await JackBot.downloadAndSaveMediaMessage(qmsg)
+                let webpToMp4 = await webp2mp4File(media)
+                await JackBot.sendMessage(m.chat, {
+                    video: {
+                        url: webpToMp4.result,
+                        caption: 'Aqui tienes el video'
+                    }
+                }, {
+                    quoted: m
+                })
+                await fs.unlinkSync(media)
+
+            }
+            break
+
         case 'waifu':{
  waifudd = await axios.get("https://nekos.life/api/v2/img/waifu")       
             await JackBot.sendMessage(m.chat, { image: { url:waifudd.data.url} , caption: mess.success}, { quoted:m }).catch(err => {
@@ -745,7 +762,7 @@ case 'curiosidad': {
     break;
 
         case 'wanumber':{
-           	if (!text) return sendMessageWithMentions(`Proporcione un número con la última cifra como "x"\n\nEjemplo: ${prefix + command} 519872560xx`)
+           	if (!text) return sendMessageWithMentions(`Proporcione un número con la última cifra como "x"\n\nEjemplo: ${prefix + command} 51987256xxx\nEjemplo: ${prefix + command} 519872560xx\nEjemplo: ${prefix + command} 5198725607x`)
 var inputnumber = text.split(" ")[0]
         
         sendMessageWithMentions(`Buscando...`)
@@ -764,7 +781,7 @@ var inputnumber = text.split(" ")[0]
             randomxx = 1000
         }
         var text66 = `*==[ Lista de Números de WhatsApp ]==*\n\n`
-        var nobio = `\n*Bio:* || \n¡Hola! Estoy usando WhatsApp.\nHey there! I am using WhatsApp.\n`
+        var nobio = `\n*Biografia:* || \n¡Hola! Estoy usando WhatsApp.\nHey there! I am using WhatsApp.\n`
         var nowhatsapp = `\n*Números sin cuenta de WhatsApp en el rango proporcionado.*\n`
         for (let i = 0; i < randomxx; i++) {
             var nu = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -793,7 +810,7 @@ var inputnumber = text.split(" ")[0]
                 if (anu1 == '401' || anu1.status.length == 0) {
                     nobio += `wa.me/${anu[0].jid.split("@")[0]}\n`
                 } else {
-                    text66 += `🪀 *Número:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Última actualización : * ${moment(anu1.setAt).tz('America/Lima').format('HH:mm:ss DD/MM/YYYY')}\n\n`
+                    text66 += `🪀 *Número:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️ *Bio :* ${anu1.status}\n🧐 *Última actualización : * ${moment(anu1.setAt).tz('America/Lima').format('HH:mm:ss DD/MM/YYYY')}\n\n`
                 }
             } catch {
                 nowhatsapp += `${number0}${i}${number1}\n`
@@ -860,6 +877,7 @@ ${readmore}
 > ${prefix}curiosidad   ᵈᵃᵗᵒˢ ᶜᵘʳⁱᵒˢᵒˢ
 > ${prefix}waifu  ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ʷᵃⁱᶠᵘˢ
 > ${prefix}men  ᵐᵉⁿᶜⁱᵒⁿᵃ ᵃ ˡᵒˢ ⁱⁿᵗᵉᵍʳᵃᵗᵉˢ ᵈᵉ ᵘⁿ ᵍʳᵘᵖᵒ
+> ${prefix}wanumber ᵇᵘˢᶜᵃ ⁿᵘᵐᵉʳᵒˢ
 
 ╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
