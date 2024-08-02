@@ -745,10 +745,10 @@ case 'curiosidad': {
     break;
 
         case 'wanumber':{
-           	if (!text) return sendMessageWithMentions(`Provide Number with last number x\n\nExample: ${prefix + command} 91690913721x`)
+           	if (!text) return sendMessageWithMentions(`Proporcione un número con la última cifra como "x"\n\nEjemplo: ${prefix + command} 519872560xx`)
 var inputnumber = text.split(" ")[0]
         
-        sendMessageWithMentions(`Searching for WhatsApp account in given range...`)
+        sendMessageWithMentions(`Buscando...`)
         function countInstances(string, word) {
             return string.split(word).length - 1
         }
@@ -763,9 +763,9 @@ var inputnumber = text.split(" ")[0]
         } else if (random_length == 3) {
             randomxx = 1000
         }
-        var text66 = `*==[ List of Whatsapp Numbers ]==*\n\n`
-        var nobio = `\n*Bio:* || \nHey there! I am using WhatsApp.\n`
-        var nowhatsapp = `\n*Numbers with no WhatsApp account within provided range.*\n`
+        var text66 = `*==[ Lista de Números de WhatsApp ]==*\n\n`
+        var nobio = `\n*Bio:* || \n¡Hola! Estoy usando WhatsApp.\nHey there! I am using WhatsApp.\n`
+        var nowhatsapp = `\n*Números sin cuenta de WhatsApp en el rango proporcionado.*\n`
         for (let i = 0; i < randomxx; i++) {
             var nu = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
             var status1 = nu[Math.floor(Math.random() * nu.length)]
@@ -793,7 +793,7 @@ var inputnumber = text.split(" ")[0]
                 if (anu1 == '401' || anu1.status.length == 0) {
                     nobio += `wa.me/${anu[0].jid.split("@")[0]}\n`
                 } else {
-                    text66 += `🪀 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Last update :* ${moment(anu1.setAt).tz('America/Lima').format('HH:mm:ss DD/MM/YYYY')}\n\n`
+                    text66 += `🪀 `*Número:*` wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Última actualización : * ${moment(anu1.setAt).tz('America/Lima').format('HH:mm:ss DD/MM/YYYY')}\n\n`
                 }
             } catch {
                 nowhatsapp += `${number0}${i}${number1}\n`
