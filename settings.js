@@ -55,6 +55,7 @@ global.mess = {
     botAdmin: 'El comando solo se puede utilizar cuando el bot es un administrador de grupo. ',
     owner: 'El comando solo puede ser utilizado por el propietario.',
     group: 'El comando es sólo para grupos.',
+    fixe: 'Usted no esta autorizado/a para usar esta funcion.'
     private: 'El comando es sólo para chats privados.',
     wait: 'En proceso... ',
     error: 'Error!',
