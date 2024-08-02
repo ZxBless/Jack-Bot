@@ -515,7 +515,7 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
 ⚠️ *(android 10 o inferiores)*
 
 *¿𝗤𝘂𝗶𝗲𝗿𝗲𝘀 𝘀𝗲𝗿 𝗣𝗿𝗲𝗺𝗶𝘂𝗺?* comunícate con el siguiente número:
-*[Click]* 976254398`;
+*[Click]* https://wa.me/51976254398`;
 
         await JackBot.sendMessage(m.chat, {
           text: premiumCommands,
@@ -742,7 +742,7 @@ break
 
       case 'clearall': {
         if (!isCreator) return sendMessageWithMentions(mess.owner)
-        JackBot.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat)
+        JackBot.chatreturn sendMessageWithMentions(mess.prem)Modify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat)
       }
         break;
 
@@ -781,6 +781,13 @@ case 'trivia': {
     }, 10000); // 10 segundos
 }
 break;
+        
+        case 'mencion': {
+if (!isGroup) return sendMessageWithMentions(mess.group)
+if (!isAdmins && !isCreator) return sendMessageWithMentions(mess.fixe)
+JackBot.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
+}
+break;
 
 
 
@@ -801,6 +808,8 @@ ${readmore}
 > ${prefix}pin   ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ᵖⁱⁿᵗᵉʳᵉˢᵗ
 > ${prefix}toimg   ᶜᵒⁿᵛⁱᵉʳᵗᵉ ˢᵗⁱᶜᵏᵉʳ ᵃ ⁱᵐᵃᵍᵉⁿ
 > ${prefix}curiosidad   ᵈᵃᵗᵒˢ ᶜᵘʳⁱᵒˢᵒˢ
+> ${prefix}waifu  ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ʷᵃⁱᶠᵘˢ
+> ${prefix}mencion  ᵐᵉⁿᶜⁱᵒⁿᵃ ᵃ ˡᵒˢ ⁱⁿᵗᵉᵍʳᵃᵗᵉˢ ᵈᵉ ᵘⁿ ᵍʳᵘᵖᵒ
 
 ╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
@@ -809,7 +818,7 @@ ${readmore}
 > ${prefix}owner
 
 ╰┈➤ *Jack Bot*
-           *Bot malicioso*`
+             *Bot malicioso*`
         if (typemenu === 'v1') {
           JackBot.sendMessage(m.chat, {
             text: jackmenuoh,
