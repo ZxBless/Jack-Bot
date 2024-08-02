@@ -592,7 +592,7 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
         break;
 
         case 'waifu':{
- waifudd = await axios.get(https://nekos.life/api/v2/img/waifu)       
+ waifudd = await axios.get("https://nekos.life/api/v2/img/waifu")       
             await JackBot.sendMessage(m.chat, { image: { url:waifudd.data.url} , caption: mess.success}, { quoted:m }).catch(err => {
                     return('Error!')
                 })
