@@ -592,21 +592,36 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
         break;
 
          case 'tovideo': {
-                if (!/webp/.test(mime)) return sendMessageWithMentions(`Etiqueta un sticker en movimiento *${prefix + command}*`)
-                let media = await JackBot.downloadAndSaveMediaMessage(qmsg)
-                let webpToMp4 = await webp2mp4File(media)
-                await JackBot.sendMessage(m.chat, {
-                    video: {
-                        url: webpToMp4.result,
-                        caption: 'Aqui tienes el video'
-                    }
-                }, {
-                    quoted: m
-                })
-                await fs.unlinkSync(media)
+    if (!/webp/.test(mime)) return sendMessageWithMentions(`Etiqueta un sticker en movimiento *${prefix + command}*`);
 
+    try {
+        // Descarga y guarda el sticker como archivo
+        let media = await JackBot.downloadAndSaveMediaMessage(qmsg);
+        console.log('Media descargada:', media);
+
+        // Convierte el archivo webp a mp4
+        let webpToMp4 = await webp2mp4File(media);
+        console.log('Resultado de la conversión:', webpToMp4);
+
+        // Envía el video resultante
+        await JackBot.sendMessage(m.chat, {
+            video: {
+                url: webpToMp4.result,
+                caption: 'Aquí tienes el video'
             }
-            break
+        }, {
+            quoted: m
+        });
+
+        // Elimina el archivo temporal
+        await fs.unlinkSync(media);
+    } catch (error) {
+        console.error('Error en el proceso de conversión a video:', error);
+        sendMessageWithMentions(`Hubo un error al convertir el sticker a video. Por favor, inténtalo nuevamente.`);
+    }
+}
+break;
+
 
         case 'waifu':{
  waifudd = await axios.get("https://nekos.life/api/v2/img/waifu")       
