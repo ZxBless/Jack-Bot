@@ -598,15 +598,6 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
                 })
                 }
 break;
-        case 'wallpaper': {
-                if (!text) return sendMessageWithMentions('Ingrese nombre de wallpaper ')
-		let { wallpaper } = require('./lib/scraper')
-                anuwallpep = await wallpaper(text)
-                result = anuwallpep[Math.floor(Math.random() * anuwallpep.length)]                
-                JackBot.sendMessage(m.chat, {caption: `${themeemoji} Title : ${result.title}\n${themeemoji} Category : ${result.type}\n${themeemoji} Detail : ${result.source}\n${themeemoji} Media Url : ${result.image[2] || result.image[1] || result.image[0]}`, image: { url: result.image[0] }} , { quoted: m })
-            }
-            break;
-
 
 
       //Crash Whatsapp
@@ -782,7 +773,7 @@ case 'trivia': {
 }
 break;
         
-        case 'mencion': {
+        case 'men': {
 if (!isGroup) return sendMessageWithMentions(mess.group)
 if (!isAdmins && !isCreator) return sendMessageWithMentions(mess.fixe)
 JackBot.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
@@ -809,7 +800,7 @@ ${readmore}
 > ${prefix}toimg   ᶜᵒⁿᵛⁱᵉʳᵗᵉ ˢᵗⁱᶜᵏᵉʳ ᵃ ⁱᵐᵃᵍᵉⁿ
 > ${prefix}curiosidad   ᵈᵃᵗᵒˢ ᶜᵘʳⁱᵒˢᵒˢ
 > ${prefix}waifu  ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ʷᵃⁱᶠᵘˢ
-> ${prefix}mencion  ᵐᵉⁿᶜⁱᵒⁿᵃ ᵃ ˡᵒˢ ⁱⁿᵗᵉᵍʳᵃᵗᵉˢ ᵈᵉ ᵘⁿ ᵍʳᵘᵖᵒ
+> ${prefix}men  ᵐᵉⁿᶜⁱᵒⁿᵃ ᵃ ˡᵒˢ ⁱⁿᵗᵉᵍʳᵃᵗᵉˢ ᵈᵉ ᵘⁿ ᵍʳᵘᵖᵒ
 
 ╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
