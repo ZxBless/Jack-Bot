@@ -747,14 +747,6 @@ break;
       }
         break;
 
-
-      case 'clearall': {
-        if (!isCreator) return sendMessageWithMentions(mess.owner)
-        JackBot.chatreturn sendMessageWithMentions(mess.prem)Modify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat)
-      }
-        break;
-
-
 case 'curiosidad': {
     const curiosidadAleatoria = obtenerCuriosidadAleatoria();
     JackBot.sendMessage(m.chat, { text: curiosidadAleatoria }, { quoted: m });
