@@ -597,19 +597,19 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
     const anime = await malScraper.getInfoFromName(text).catch(() => null)
     if (!anime) return sendMessageWithMentions(`No se pudo encontrar`)
     let animetxt = `
-🎀 *Título: ${anime.title}*
-🎋 *Tipo: ${anime.type}*
-🎐 *Estrenado en: ${anime.premiered}*
-💠 *Total de Episodios: ${anime.episodes}*
-📈 *Estado: ${anime.status}*
-💮 *Géneros: ${anime.genres}*
-📍 *Estudio: ${anime.studios}*
-🌟 *Puntuación: ${anime.score}*
-💎 *Clasificación: ${anime.rating}*
-🏅 *Rango: ${anime.ranked}*
-💫 *Popularidad: ${anime.popularity}*
-♦️ *Tráiler: ${anime.trailer}*
-🌐 *URL: ${anime.url}*
+🎀 *Título:* ${anime.title}
+🎋 *Tipo:* ${anime.type}
+🎐 *Estrenado en:* ${anime.premiered}
+💠 *Total de Episodios:* ${anime.episodes}
+📈 *Estado:* ${anime.status}
+💮 *Géneros:* ${anime.genres}
+📍 *Estudio:* ${anime.studios}
+🌟 *Puntuación:* ${anime.score}
+💎 *Clasificación:* ${anime.rating}
+🏅 *Rango:* ${anime.ranked}
+💫 *Popularidad:* ${anime.popularity}
+♦️ *Tráiler:* ${anime.trailer}
+🌐 *URL:* ${anime.url}
 ❄ *Descripción:* ${anime.synopsis}`
     await JackBot.sendMessage(m.chat, {image: {url: anime.picture}, caption: animetxt}, {quoted: m})
 }
@@ -882,8 +882,9 @@ ${readmore}
 > ${prefix}toimg   ᶜᵒⁿᵛⁱᵉʳᵗᵉ ˢᵗⁱᶜᵏᵉʳ ᵃ ⁱᵐᵃᵍᵉⁿ
 > ${prefix}curiosidad   ᵈᵃᵗᵒˢ ᶜᵘʳⁱᵒˢᵒˢ
 > ${prefix}waifu  ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ʷᵃⁱᶠᵘˢ
-> ${prefix}men  ᵐᵉⁿᶜⁱᵒⁿᵃ ᵃ ˡᵒˢ ⁱⁿᵗᵉᵍʳᵃᵗᵉˢ ᵈᵉ ᵘⁿ ᵍʳᵘᵖᵒ
+> ${prefix}men  ᶜʳᵉᵃ  ᵘⁿ ᵐᵉⁿˢᵃʲᵉ ᵗᵃᵍ ᵃˡˡ
 > ${prefix}wanumber ᵇᵘˢᶜᵃ ⁿᵘᵐᵉʳᵒˢ
+> ${prefix}anime ⁱⁿᶠᵒʳᵐᵃᶜⁱᵒⁿ ᵈᵉ ᵃⁿⁱᵐᵉˢ ⁽ⁱⁿᵍˡᵉˢ⁾
 
 ╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
