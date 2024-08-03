@@ -592,30 +592,28 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
         break;
 
         case 'anime': {
-if (!text) return sendMessageWithMentions(`Which anime are you lookin for?`)
-const malScraper = require('mal-scraper')
-        const anime = await malScraper.getInfoFromName(text).catch(() => null)
-        if (!anime) return sendMessageWithMentions(`Could not find`)
-let animetxt = `
-🎀 *Titulo: ${anime.title}*
-🎋 *Type: ${anime.type}*
-🎐 *Premiered on: ${anime.premiered}*
-💠 *Total Episodes: ${anime.episodes}*
-📈 *Status: ${anime.status}*
-💮 *Genres: ${anime.genres}
-📍 *Studio: ${anime.studios}*
-🌟 *Score: ${anime.score}*
-💎 *Rating: ${anime.rating}*
-🏅 *Rank: ${anime.ranked}*
-💫 *Popularity: ${anime.popularity}*
-♦️ *Trailer: ${anime.trailer}*
+    if (!text) return sendMessageWithMentions(`¿Qué anime estás buscando?`)
+    const malScraper = require('mal-scraper')
+    const anime = await malScraper.getInfoFromName(text).catch(() => null)
+    if (!anime) return sendMessageWithMentions(`No se pudo encontrar`)
+    let animetxt = `
+🎀 *Título: ${anime.title}*
+🎋 *Tipo: ${anime.type}*
+🎐 *Estrenado en: ${anime.premiered}*
+💠 *Total de Episodios: ${anime.episodes}*
+📈 *Estado: ${anime.status}*
+💮 *Géneros: ${anime.genres}*
+📍 *Estudio: ${anime.studios}*
+🌟 *Puntuación: ${anime.score}*
+💎 *Clasificación: ${anime.rating}*
+🏅 *Rango: ${anime.ranked}*
+💫 *Popularidad: ${anime.popularity}*
+♦️ *Tráiler: ${anime.trailer}*
 🌐 *URL: ${anime.url}*
-❄ *Description:* ${anime.synopsis}*`
-                await JackBot.sendMessage(m.chat,{image:{url:anime.picture}, caption:animetxt},{quoted:m})
-                }
-                break
-
-
+❄ *Descripción:* ${anime.synopsis}`
+    await JackBot.sendMessage(m.chat, {image: {url: anime.picture}, caption: animetxt}, {quoted: m})
+}
+break
         case 'waifu':{
  waifudd = await axios.get("https://nekos.life/api/v2/img/waifu")       
             await JackBot.sendMessage(m.chat, { image: { url:waifudd.data.url} , caption: mess.success}, { quoted:m }).catch(err => {
