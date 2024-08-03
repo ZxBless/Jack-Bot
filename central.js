@@ -591,36 +591,39 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
       }
         break;
 
-         case 'tovideo': {
-    if (!/webp/.test(mime)) return sendMessageWithMentions(`Etiqueta un sticker en movimiento *${prefix + command}*`);
-
-    try {
-        // Descarga y guarda el sticker como archivo
-        let media = await JackBot.downloadAndSaveMediaMessage(qmsg);
-        console.log('Media descargada:', media);
-
-        // Convierte el archivo webp a mp4
-        let webpToMp4 = await webp2mp4File(media);
-        console.log('Resultado de la conversión:', webpToMp4);
-
-        // Envía el video resultante
-        await JackBot.sendMessage(m.chat, {
-            video: {
-                url: webpToMp4.result,
-                caption: 'Aquí tienes el video'
-            }
-        }, {
-            quoted: m
-        });
-
-        // Elimina el archivo temporal
-        await fs.unlinkSync(media);
-    } catch (error) {
-        console.error('Error en el proceso de conversión a video:', error);
-        sendMessageWithMentions(`Hubo un error al convertir el sticker a video. Por favor, inténtalo nuevamente.`);
-    }
+        case 'apk':
+case 'apkdl':{
+if (!text) return sendMessageWithMentions("What apk u wanna download?")
+let resxeon = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
+let jsonxeon = await resxeon.json()
+JackBot.sendMessage(from, { document: { url: jsonxeon.data.dllink}, fileName : jsonxeon.data.name, mimetype: 'application/vnd.android.package-archive'}, {quoted:m})
+.catch(console.error)
 }
-break;
+break
+
+        case 'anime': {
+if (!text) return sendMessageWithMentions(`Which anime are you lookin for?`)
+const malScraper = require('mal-scraper')
+        const anime = await malScraper.getInfoFromName(text).catch(() => null)
+        if (!anime) return sendMessageWithMentions(`Could not find`)
+let animetxt = `
+🎀 *Titulo: ${anime.title}*
+🎋 *Type: ${anime.type}*
+🎐 *Premiered on: ${anime.premiered}*
+💠 *Total Episodes: ${anime.episodes}*
+📈 *Status: ${anime.status}*
+💮 *Genres: ${anime.genres}
+📍 *Studio: ${anime.studios}*
+🌟 *Score: ${anime.score}*
+💎 *Rating: ${anime.rating}*
+🏅 *Rank: ${anime.ranked}*
+💫 *Popularity: ${anime.popularity}*
+♦️ *Trailer: ${anime.trailer}*
+🌐 *URL: ${anime.url}*
+❄ *Description:* ${anime.synopsis}*`
+                await JackBot.sendMessage(m.chat,{image:{url:anime.picture}, caption:animetxt},{quoted:m})
+                }
+                break
 
 
         case 'waifu':{
