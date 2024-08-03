@@ -591,16 +591,6 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
       }
         break;
 
-        case 'apk':
-case 'apkdl':{
-if (!text) return sendMessageWithMentions("What apk u wanna download?")
-let resxeon = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
-let jsonxeon = await resxeon.json()
-JackBot.sendMessage(from, { document: { url: jsonxeon.data.dllink}, fileName : jsonxeon.data.name, mimetype: 'application/vnd.android.package-archive'}, {quoted:m})
-.catch(console.error)
-}
-break
-
         case 'anime': {
 if (!text) return sendMessageWithMentions(`Which anime are you lookin for?`)
 const malScraper = require('mal-scraper')
