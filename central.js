@@ -881,10 +881,10 @@ ${readmore}
 > ${prefix}pin   ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ᵖⁱⁿᵗᵉʳᵉˢᵗ
 > ${prefix}toimg   ᶜᵒⁿᵛⁱᵉʳᵗᵉ ˢᵗⁱᶜᵏᵉʳ ᵃ ⁱᵐᵃᵍᵉⁿ
 > ${prefix}curiosidad   ᵈᵃᵗᵒˢ ᶜᵘʳⁱᵒˢᵒˢ
-> ${prefix}waifu  ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ʷᵃⁱᶠᵘˢ
-> ${prefix}men  ᶜʳᵉᵃ  ᵘⁿ ᵐᵉⁿˢᵃʲᵉ ᵗᵃᵍ ᵃˡˡ
-> ${prefix}wanumber ᵇᵘˢᶜᵃ ⁿᵘᵐᵉʳᵒˢ
-> ${prefix}anime ⁱⁿᶠᵒʳᵐᵃᶜⁱᵒⁿ ᵈᵉ ᵃⁿⁱᵐᵉˢ ⁽ⁱⁿᵍˡᵉˢ⁾
+> ${prefix}waifu   ᵉⁿᵛⁱᵃ ⁱᵐᵃᵍᵉⁿᵉˢ ᵈᵉ ʷᵃⁱᶠᵘˢ
+> ${prefix}men   ᶜʳᵉᵃ  ᵘⁿ ᵐᵉⁿˢᵃʲᵉ ᵗᵃᵍ ᵃˡˡ
+> ${prefix}wanumber   ᵇᵘˢᶜᵃ ⁿᵘᵐᵉʳᵒˢ
+> ${prefix}anime   ⁱⁿᶠᵒʳᵐᵃᶜⁱᵒⁿ ᵈᵉ ᵃⁿⁱᵐᵉˢ ⁽ⁱⁿᵍˡᵉˢ⁾
 
 ╰┈➤ *ɪɴꜰᴏ ᴄᴏᴍᴀɴᴅᴏꜱ ᴘʀᴇᴍɪᴜᴍ*
 > ${prefix}premium
