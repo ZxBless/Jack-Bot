@@ -11,7 +11,8 @@ const ms = toMs = require('ms')
 const axios = require('axios')
 const fetch = require('node-fetch')
 const pino = require('pino')
-const ytdl = require("ytdl-core")
+const yts = require('yt-search')
+const ytdl = require('@distube/ytdl-core')
 const { exec, spawn, execSync } = require("child_process")
 const { performance } = require('perf_hooks')
 const more = String.fromCharCode(8206)
@@ -557,6 +558,37 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
         })
       }
         break
+
+        case 'play':  case 'song': {
+if (!text) return sendMessageWithMentions(Example : ${prefix + command} anime whatsapp status)
+try {
+const jackplaymp3 = require('./lib/ytdl')
+let yts = require("youtube-yts")
+        let search = await yts(text)
+        let anup3k = search.videos[0]
+const pl= await jackplaymp3.mp3(anup3k.url)
+await JackBot.sendMessage(m.chat,{
+    audio: fs.readFileSync(pl.path),
+    fileName: anup3k.title + '.mp3',
+    mimetype: 'audio/mp4', ptt: true,
+    contextInfo:{
+        externalAdReply:{
+            title:anup3k.title,
+            body: botname,
+            thumbnail: await fetchBuffer(pl.meta.image),
+            sourceUrl: websitex,
+            mediaType:2,
+            mediaUrl:anup3k.url,
+        }
+
+    },
+},{quoted:m})
+await fs.unlinkSync(pl.path)
+}catch{
+	sendMessageWithMentions(Music not found.)
+	}
+}
+break
 
       case 'sticker': case 's': {
         if (/image/.test(mime)) {
