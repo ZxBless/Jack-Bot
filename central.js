@@ -560,7 +560,7 @@ Genera un crash en el dispositivo Android afectado, mostrando un mensaje de erro
         break
 
         case 'play':  case 'song': {
-if (!text) return sendMessageWithMentions(Example : ${prefix + command} anime whatsapp status)
+if (!text) return sendMessageWithMentions("Example : ${prefix + command} anime whatsapp status")
 try {
 const jackplaymp3 = require('./lib/ytdl')
 let yts = require("youtube-yts")
