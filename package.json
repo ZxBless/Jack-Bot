@@ -19,6 +19,7 @@
         "@whiskeysockets/baileys": "^6.7.5",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@hapi/boom": "^10.0.1",
+        "@distube/ytdl-core": "^4.13.5",
         "awesome-phonenumber": "^5.9.0",
         "axios": "^1.4.0",
         "chalk": "^4.1.2",
