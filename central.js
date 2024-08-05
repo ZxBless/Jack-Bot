@@ -25,6 +25,7 @@ const { smsg, getGroupAdmins, formatp, jam, formatDate, getTime, isUrl, await, s
 let afk = require("./lib/afk");
 const { addPremiumUser, getPremiumExpired, getPremiumPosition, expiredCheck, checkPremiumUser, getAllPremiumUser } = require('./lib/premiun')
 const { fetchBuffer, buffergif } = require("./lib/myfunc2")
+const { tiktokDl } = require('./lib/screaper')
 
 
 //database
@@ -606,6 +607,20 @@ break
         }
       }
         break
+
+case 'tiktok': {
+				if (!text) return sendMessageWithMentions(`Example: ${prefix + command} url_tiktok`)
+				if (!text.includes('tiktok.com')) return sendMessageWithMentions('Url Tidak Mengandung Result Dari Tiktok!')
+				const hasil = await tiktokDl(text);
+				if (hasil.size_nowm) {
+					await JackBot.sendFileUrl(m.chat, hasil.data[1].url, `*📍Title:* ${hasil.title}\n*⏳Duration:* ${hasil.duration}\n*🎃Author:* ${hasil.author.nickname} (@${hasil.author.fullname})`, m)
+				} else {
+					for (let i = 0; i < hasil.data.length; i++) {
+						await JackBot.sendFileUrl(m.chat, hasil.data[i].url, `*🚀Image:* ${i+1}`, m)
+					}
+				}
+			}
+			break
 
 
       case 'toimage': case 'toimg': {
