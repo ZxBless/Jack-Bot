@@ -585,7 +585,7 @@ await JackBot.sendMessage(m.chat,{
 },{quoted:m})
 await fs.unlinkSync(pl.path)
 }catch{
-	sendMessageWithMentions(Music not found.)
+	sendMessageWithMentions("Error pape")
 	}
 }
 break
